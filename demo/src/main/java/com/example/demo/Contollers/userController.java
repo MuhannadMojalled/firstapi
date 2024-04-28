@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
 public class userController {
-    @GetMapping("/hey/{x}")
-    public ResponseEntity<Object> firstApi(@PathVariable String x){
-        return new ResponseEntity<>("hello "+x, HttpStatus.OK);
+    @GetMapping("/hey/{x}/{y}")
+    public ResponseEntity<Object> firstApi(@PathVariable String x,@PathVariable int y){
+        return new ResponseEntity<>("hello "+x+" "+y, HttpStatus.OK);
     }
 }
