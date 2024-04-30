@@ -24,8 +24,11 @@ public class UserEntity {
     private int age;
 
     @Column(name = "phone_number")
-    private int phoneNumber;
+    private String phoneNumber;
 
     @Column
     private String email;
+
+    @Column
+    private String status;
 }
